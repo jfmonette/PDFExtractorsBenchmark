@@ -27,7 +27,7 @@ Public Class TET
         Dim uni_code As UnicodeEncoding = New UnicodeEncoding(False, True)
         Dim byteOrderMark() As Byte = uni_code.GetPreamble()
 
-        outfile = File.Create("ExtractedText.txt")
+        outfile = File.Create("TET - ExtractedText.txt")
         w = New BinaryWriter(outfile)
         w.Write(byteOrderMark)
 

@@ -1,6 +1,6 @@
 ﻿Module PDFExtractorsBenchmark
 
-    Private extractors As New List(Of Extractor) From {New TET()}
+    Private extractors As New List(Of Extractor) From {New TET(), New Docotic()}
     Private pdfFile As New String(My.Computer.FileSystem.CurrentDirectory + "\Test.pdf")
     Private numberOfTimesToProcessFile As Integer = 200
     Private timer As New Timer()
